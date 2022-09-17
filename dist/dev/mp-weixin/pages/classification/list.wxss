@@ -1,0 +1,10 @@
+@import "../../nvue.wxss";
+.commodity {
+  width: 500rpx;
+}
+.commodity .name {
+  height: 70rpx;
+}
+.commodity .tag {
+  height: 50rpx;
+}

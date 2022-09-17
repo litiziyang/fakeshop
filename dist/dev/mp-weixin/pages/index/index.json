@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "fake商城",
+  "usingComponents": {
+    "tm-carousel": "../../tmui/components/tm-carousel/tm-carousel",
+    "tm-roll-notice": "../../tmui/components/tm-roll-notice/tm-roll-notice",
+    "tm-sheet": "../../tmui/components/tm-sheet/tm-sheet",
+    "tm-icon": "../../tmui/components/tm-icon/tm-icon",
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-col": "../../tmui/components/tm-col/tm-col",
+    "tm-row": "../../tmui/components/tm-row/tm-row",
+    "tm-grid-item": "../../tmui/components/tm-grid-item/tm-grid-item",
+    "tm-grid": "../../tmui/components/tm-grid/tm-grid",
+    "tm-image": "../../tmui/components/tm-image/tm-image",
+    "tm-tabs": "../../tmui/components/tm-tabs/tm-tabs",
+    "tm-waterfall-item": "../../tmui/components/tm-waterfall-item/tm-waterfall-item",
+    "tm-waterfall": "../../tmui/components/tm-waterfall/tm-waterfall",
+    "tm-sticky": "../../tmui/components/tm-sticky/tm-sticky",
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}

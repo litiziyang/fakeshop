@@ -1,0 +1,26 @@
+
+.aniRow.data-v-55f8dc2f{
+  -webkit-animation-name: roll-55f8dc2f;
+          animation-name: roll-55f8dc2f;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes roll-55f8dc2f {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-150%);
+}
+}
+@keyframes roll-55f8dc2f {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-150%);
+}
+}
+

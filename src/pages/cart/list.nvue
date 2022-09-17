@@ -1,0 +1,7 @@
+<template lang="pug">
+tm-app
+    tm-sheet(:margin="[30,20]" :padding="[0,0]" :transprent="true" :shadow="5"  )
+        tm-text(:font-size="24" _class="font-weight-b" label="这里是购物车界面")
+
+</template>
+<script setup lang="ts"></script>

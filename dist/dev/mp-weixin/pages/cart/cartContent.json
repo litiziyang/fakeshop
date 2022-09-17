@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "购物",
+  "usingComponents": {
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-sheet": "../../tmui/components/tm-sheet/tm-sheet",
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}

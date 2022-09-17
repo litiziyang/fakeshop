@@ -1,0 +1,101 @@
+<template lang="pug">
+tm-app
+    tm-sheet(:margin="[30,10]" :padding="[0,0]" :transprent="true" :shadow="5" )
+        view().flex.flex-row
+            tm-avatar(:font-size="42" :round="12" color="pink" linear="top" icon="tmicon-QQ")
+            view().flex.flex-col.ml-n5.mt-5
+                tm-text(label="帅哥" color="blue" :font-size="35" ).text-weight-b
+                tm-text(label="15288881111" color="grey" :font-size="24").mt-5
+        tm-image(:width="686" :height="180" src="https://picsum.photos/200/300" :round="4").mt-n5
+        tm-row(:width="686"  :column="3" :round="3" color="blue-grey").mt-n4
+            tm-col(:height="120")
+                view().flex.flex-col.flex-col-top-center
+                    tm-text(label="3").text-weight-b
+                    tm-text(label="优惠券" :font-size="30").mt-n2
+            tm-col(:height="120")
+                view().flex.flex-col.flex-col-top-center
+                    tm-text(label="3").text-weight-b
+                    tm-text(label="积分" :font-size="30").mt-n2
+            tm-col(:height="120")
+                view().flex.flex-col.flex-col-top-center
+                    tm-text(label="3").text-weight-b
+                    tm-text(label="回馈金" :font-size="30").mt-n2
+    tm-sheet(:margin="[30,10]" :padding="[0,0]"  :shadow="5" :round="3")
+        tm-row(:width="686"  :column="3" :round="2" color="blue-grey").mt-n4
+            tm-col(:height="50"  class="flex-6")
+                tm-text(label="我的订单" :font-size="35").ml-n5.text-weight-b
+            tm-col(:height="50"  class="flex-6")
+                tm-text(label="全部订单  >" :font-size="30")
+        tm-row(:width="686" :column="4" :round="3" color="blue-grey")
+            tm-col(:height="150")
+                view().flex.flex-col.flex-col-top-center
+                    tm-icon(color="primary" :font-size="50" name="tmicon-user-fill")
+                    tm-text(label="待支付" :font-size="25")
+            tm-col(:height="150")
+                view().flex.flex-col.flex-col-top-center
+                    tm-icon(color="primary" :font-size="50" name="tmicon-user-fill")
+                    tm-text(label="待收货" :font-size="25")
+            tm-col(:height="150")
+                view().flex.flex-col.flex-col-top-center
+                    tm-icon(color="primary" :font-size="50" name="tmicon-user-fill")
+                    tm-text(label="已签收" :font-size="25")
+            tm-col(:height="150")
+                view().flex.flex-col.flex-col-top-center
+                    tm-icon(color="primary" :font-size="50" name="tmicon-user-fill")
+                    tm-text(label="退款/售后" :font-size="25")
+    tm-carousel(autoplay :width="686" :round="3" :height="200" :list="listimg"  model="dot").ma-n3
+    tm-sheet(:margin="[30,10]" :padding="[0,0]"  :shadow="5" :round="3")
+        tm-text(label="更多服务" :font-size="35").mt-n7.ml-n5.text-weight-b
+        tm-grid(:col="4" :width="690" :transprent="true").mt-n5
+            tm-grid-item(:height="120" url='/pages/cart/cartContent')
+                tm-icon(name="tmicon-position-fill" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="收货地址")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-headset-fill" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="联系客服")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-collection-fill" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的收藏")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-wind-smile" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的试用")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-md-mail-open" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的预约")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-qrcode" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的直通码")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-mobile-alt" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的报告")
+            tm-grid-item(:height="120")
+                tm-icon(name="tmicon-ios-volume-high" :font-size="42")
+                tm-text(_class="pt-10" :font-size="22" label="我的话题")
+
+
+
+
+
+
+
+
+</template>
+<script setup lang="ts">
+    import {onMounted, ref} from 'vue'
+    import {onLoad, onShow} from '@dcloudio/uni-app'
+
+    const  listimg=[
+        "https://picsum.photos/200/300?id=43335",
+        "https://picsum.photos/200/300?id=433",
+        "https://picsum.photos/200/300?id=439",
+        "https://picsum.photos/200/300?id=459",
+    ]
+
+</script>
+
+<style lang="stylus">
+.dingdan
+    width 686
+    height 300
+    color white
+</style>

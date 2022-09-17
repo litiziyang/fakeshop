@@ -1,0 +1,69 @@
+{
+	"easycom":{
+		"autoscan": true,
+		"custom":{
+			"^tm-(.*)": "@/tmui/components/tm-$1/tm-$1.vue"
+		}
+	},
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "fake商城"
+			}
+		},
+		{
+			"path": "pages/index/user",
+			"style": {
+				"navigationBarTitleText": "用户"
+			}
+		},
+		{
+			"path": "pages/cart/list",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/cart/cartContent",
+			"style": {
+				"navigationBarTitleText": "购物"
+			}
+		},
+		{
+			"path": "pages/classification/list",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#fa436a",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/classification/list",
+				"iconPath": "static/tab-cart.png",
+				"selectedIconPath": "static/tab-cart-current.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/index/user",
+				"iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "我的"
+			}
+		]
+	}
+}

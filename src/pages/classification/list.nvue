@@ -1,0 +1,75 @@
+<template lang="pug">
+tm-app
+    view.flex.flex-row
+        view.flex-0
+            tm-sheet(:width="150" :transprent="true" :margin="[0,0]" )
+                tm-text(label="-" color="grey-5" )
+        list.flex-0.fixed
+            tm-sheet(:margin="[0,0]" :width="160" :transprent="item.id != classId" @click="changeClassId(item.id)" v-for="(item, index) in classes" :key="index" )
+                tm-text(:label="item.name" ).flex-center
+        view.flex-12
+            tm-carousel(autoplay  :round="3" :width="536" :height="130" :list="listimg" model="dot")
+            view(v-for="(item,index) in commodities" :key="index" )
+                tm-sheet(:margin="[0,0]")
+                    .flex.flex-row.commodity
+                        tm-image(:src="item.main_image" :width="180" :height="180" @click="toCommodity(item)")
+                        tm-sheet(:padding="[0,0]" :margin="[0,0]" :width="300").flex.flex-col.pl-n5.pt-n3.pb-n3.pr-n5.flex-center
+                            tm-text(:label="item.name" @click="toCommodity(item)").pl-n2.name
+                            .flex.flex-row.tag
+                                tm-tag(color="green" size="xs" label="零售")
+                            .flex.flex-row.pl-n2.flex-between.flex-row-center-between
+                                tm-
+
+
+
+
+
+
+
+</template>
+
+<script lang="ts" setup>
+    import { getCurrentInstance, onMounted, ref } from 'vue'
+    const classId = ref<string>('0')
+    const classes=[
+        {'name':"个人护理",'id':'0'},
+        {'name':"肌肤护理",'id':'1'},
+        {'name':"个人护理",'id':'2'},
+        {'name':"男士专区",'id':'3'},
+        {'name':"香水香氛",'id':'4'},
+    ]
+
+    function changeClassId(id: string){
+        classId.value= id
+    }
+
+    const listimg = [
+        "https://picsum.photos/200/300?id=43335",
+        "https://picsum.photos/200/300?id=433",
+        "https://picsum.photos/200/300?id=439",
+        "https://picsum.photos/200/300?id=459",
+    ]
+
+    const commodities = [
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品1"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品2"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品3"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品4"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品5"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品6"},
+        {'main_image':"https://picsum.photos/200/300?id=43335" ,'name':"商品7"},
+
+    ]
+</script>
+
+
+<style lang="stylus">
+.commodity
+    width 500upx
+
+    .name
+        height 70upx
+
+    .tag
+        height 50upx
+</style>

@@ -1,0 +1,5 @@
+@import "../../nvue.wxss";
+.huiyuan {
+  background-color: #ffb6c1;
+  border-radius: 4px;
+}

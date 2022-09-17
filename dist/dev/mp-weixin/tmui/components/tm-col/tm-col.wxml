@@ -1,0 +1,1 @@
+<view bindtap="{{g}}" class="{{['flex', 'flex-col', h]}}" style="{{i}}"><view eventPenetrationEnabled="{{true}}" style="{{a + ';' + b + ';' + c + ';' + d + ';' + e}}" class="{{['flex flex-col', f]}}"><slot></slot></view></view>

@@ -1,0 +1,6 @@
+@import "../../nvue.wxss";
+.dingdan {
+  width: 686;
+  height: 300;
+  color: #fff;
+}

@@ -1,0 +1,1 @@
+<tm-app u-s="{{['d']}}" u-i="2f66fffc-0" bind:__l="__l"><tm-sheet wx:if="{{b}}" u-s="{{['d']}}" u-i="2f66fffc-1,2f66fffc-0" bind:__l="__l" u-p="{{b}}"><tm-text wx:if="{{a}}" u-i="2f66fffc-2,2f66fffc-1" bind:__l="__l" u-p="{{a}}"></tm-text></tm-sheet></tm-app>
